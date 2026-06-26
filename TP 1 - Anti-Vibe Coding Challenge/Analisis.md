@@ -27,7 +27,7 @@
  Código mejorado ---> [Ver](https://github.com/AmandaIsDead/Generacion-T/tree/main/TP%201%20-%20Anti-Vibe%20Coding%20Challenge/Caso%201%20-%20Pok%C3%A9dex/C%C3%B3digo%20Mejorado)
  
  ### Validación personal 
- A pesar de no tener muchos tantos sobre JS, puedo entender como funciona el código, ya que la IA también fue clara y lo estructuró de forma muy ordenada, agregó títulos a los bloques y funciones del mismo. 
+ A pesar de no tener tantos conocimientos sobre JS, puedo entender como funciona el código, ya que la IA también fue clara y lo estructuró de forma muy ordenada, agregó títulos a los bloques y funciones del mismo. 
  <br>
  Para validar el código, lo que haría sería ver si estan todos los Pókemon, utilizar el filtro, agregar un Pokémon a favoritos y ver si se guarda al cerrar la página (localStorage), generar algún error (como buscar un nombre inexistente) para ver si cumplió con el manejo de errores, etc.
 
