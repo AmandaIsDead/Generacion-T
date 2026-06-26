@@ -1,0 +1,522 @@
+/* ===========================
+   FUENTES Y VARIABLES
+=========================== */
+
+:root{
+    --rojo:#d62828;
+    --rojoOscuro:#9d0208;
+    --amarillo:#ffcb05;
+    --azul:#3b4cca;
+    --verde:#8ac926;
+    --gris:#e5e5e5;
+    --blanco:#ffffff;
+    --negro:#202020;
+    --sombra:0 8px 18px rgba(0,0,0,.25);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: radial-gradient(circle at top, #2b2d42, #1a1b26);
+    font-family:'VT323', monospace;
+    color:var(--negro);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background:linear-gradient(var(--rojo),var(--rojoOscuro));
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    box-shadow:var(--sombra);
+}
+
+header h1{
+    font-family:'Press Start 2P', cursive;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+header p{
+    font-size:1.4rem;
+}
+
+/* ===========================
+   MENÚ
+=========================== */
+
+.menu{
+
+    width:95%;
+    max-width:1300px;
+
+    margin:30px auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:var(--sombra);
+
+}
+
+.busqueda{
+
+    display:flex;
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.busqueda input{
+
+    flex:1;
+
+}
+
+input,
+select{
+
+    padding:12px;
+
+    border:3px solid var(--azul);
+
+    border-radius:10px;
+
+    font-size:1.3rem;
+
+    font-family:'VT323';
+
+}
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    background:var(--amarillo);
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    font-size:1.2rem;
+
+    transition:.25s;
+
+    font-family:'VT323';
+
+    font-weight:bold;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+.filtros{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+/* ===========================
+   LOADER
+=========================== */
+
+#loading{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:35px;
+
+}
+
+.loader{
+
+    width:65px;
+
+    height:65px;
+
+    border:7px solid #ddd;
+
+    border-top:7px solid var(--rojo);
+
+    border-radius:50%;
+
+    animation:girar 1s linear infinite;
+
+}
+
+@keyframes girar{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.oculto{
+
+    display:none !important;
+
+}
+
+/* ===========================
+   MENSAJE ERROR
+=========================== */
+
+.mensaje{
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:#fff;
+
+    border:6px solid var(--rojo);
+
+    border-radius:18px;
+
+    width:330px;
+
+    max-width:90%;
+
+    padding:25px;
+
+    z-index:100;
+
+    text-align:center;
+
+    box-shadow:0 0 25px rgba(0,0,0,.4);
+
+}
+
+.mensaje p{
+
+    font-size:1.6rem;
+
+    margin-bottom:20px;
+
+}
+
+.mensaje button{
+
+    width:100%;
+
+}
+
+/* ===========================
+   TITULOS
+=========================== */
+
+section h2{
+
+    width:95%;
+
+    max-width:1300px;
+
+    margin:35px auto 20px;
+
+    font-family:'Press Start 2P';
+
+    color:var(--azul);
+
+    font-size:1rem;
+
+}
+
+/* ===========================
+   CONTENEDOR DE POKÉMON
+=========================== */
+
+.contenedorPokemon{
+    width:95%;
+    max-width:1300px;
+    margin:0 auto 40px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+/* ===========================
+   TARJETA
+=========================== */
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:var(--sombra);
+
+    transition:.25s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.numero{
+
+    position:absolute;
+
+    right:15px;
+
+    top:15px;
+
+    font-weight:bold;
+
+    color:#888;
+
+    font-size:1.4rem;
+
+}
+
+.card img{
+
+    width:170px;
+
+    height:170px;
+
+    image-rendering:pixelated;
+
+    transition:.3s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.card h3{
+
+    text-transform:capitalize;
+
+    margin:15px 0;
+
+    font-size:2rem;
+
+}
+
+.card p{
+
+    font-size:1.4rem;
+
+    margin:8px 0;
+
+}
+
+/* ===========================
+   TIPOS
+=========================== */
+
+.tipos{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin:15px 0;
+
+}
+
+.tipo{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-weight:bold;
+
+    font-size:1.2rem;
+
+}
+
+/* Colores por tipo */
+
+.normal{background:#A8A878;}
+.fire{background:#F08030;}
+.water{background:#6890F0;}
+.grass{background:#78C850;}
+.electric{background:#F8D030;color:black;}
+.ice{background:#98D8D8;color:black;}
+.fighting{background:#C03028;}
+.poison{background:#A040A0;}
+.ground{background:#E0C068;color:black;}
+.flying{background:#A890F0;}
+.psychic{background:#F85888;}
+.bug{background:#A8B820;}
+.rock{background:#B8A038;}
+.ghost{background:#705898;}
+.dragon{background:#7038F8;}
+.dark{background:#705848;}
+.steel{background:#B8B8D0;color:black;}
+.fairy{background:#EE99AC;color:black;}
+
+/* ===========================
+   BOTÓN FAVORITOS
+=========================== */
+
+.favorito{
+
+    width:100%;
+
+    margin-top:15px;
+
+    background:var(--verde);
+
+    color:white;
+
+    font-size:1.3rem;
+
+}
+
+.favorito:hover{
+
+    background:#6bb11e;
+
+}
+
+.favorito.activo{
+
+    background:var(--rojo);
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:var(--rojoOscuro);
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:50px;
+
+    font-size:1.3rem;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .busqueda{
+
+        flex-direction:column;
+
+    }
+
+    .filtros{
+
+        flex-direction:column;
+
+    }
+
+    button,
+    input,
+    select{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    header h1{
+
+        font-size:1.3rem;
+
+    }
+
+    header p{
+
+        font-size:1.1rem;
+
+    }
+
+    section h2{
+
+        font-size:.8rem;
+
+    }
+
+    .card img{
+
+        width:130px;
+        height:130px;
+
+    }
+
+    .card h3{
+
+        font-size:1.6rem;
+
+    }
+
+}
+
+.menu, .card, .mensaje{
+    backdrop-filter: blur(6px);
+}
