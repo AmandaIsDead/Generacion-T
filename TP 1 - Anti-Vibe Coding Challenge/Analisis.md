@@ -22,6 +22,7 @@
  
  ### Código generado
  Código original ---> [Ver](https://github.com/AmandaIsDead/Generacion-T/tree/main/TP%201%20-%20Anti-Vibe%20Coding%20Challenge/Caso%201%20-%20Pok%C3%A9dex/C%C3%B3digo%20Original)
+ <br>
  Código mejorado ---> [Ver](https://github.com/AmandaIsDead/Generacion-T/tree/main/TP%201%20-%20Anti-Vibe%20Coding%20Challenge/Caso%201%20-%20Pok%C3%A9dex/C%C3%B3digo%20Mejorado)
  
  ### Validación personal 
