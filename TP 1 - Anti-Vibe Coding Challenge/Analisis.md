@@ -58,9 +58,9 @@ Generame los tres códigos: el index en HTML, el style en CSS y el script en JS.
 El prompt original es muy básico, no se le aclara nada, ni siquiera el lenguaje. La IA no sabría, por ejemplo; cómo dividir la información, qué hacer/mostrar cuando ocurre un error, etc. Así terminaríamos teniendo un diseño poco estético, una página desordenada, muy simple y con poca información chequeable (al no pedirle que use APIs, la IA podría inventar algunos pedazos de información).
  
  ### Código generado
- Código original ---> [Ver]()
+ Código original ---> [Ver](https://github.com/AmandaIsDead/Generacion-T/tree/main/TP%201%20-%20Anti-Vibe%20Coding%20Challenge/Caso%203%20-%20Star%20Wars/C%C3%B3digo%20Original)
  <br>
- Código mejorado ---> [Ver]()
+ Código mejorado ---> [Ver](https://github.com/AmandaIsDead/Generacion-T/tree/main/TP%201%20-%20Anti-Vibe%20Coding%20Challenge/Caso%203%20-%20Star%20Wars/C%C3%B3digo%20Mejorado)
  
  ### Validación personal
  Para empezar, el código generado no funciona correctamente, por lo que yo corregiría algunas cosas antes de usarlo:
