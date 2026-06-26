@@ -19,6 +19,7 @@
  - **Lenguaje:** Le aclaré los lenguajes en los que debía hacerlo.
  
  ### Riesgos del prompt original
+ El prompt original es muy simple, por lo que puede tener muchos riesgos, ya que no le aclaramos casi nada a la IA. Algunos de estos riesgos son, por ejemplo; un diseño poco estético o muy simple, , un mal manejo de errores (como que la página no te avise y te quedes mirando una pantalla en blanco), o que no haya ninguno en absoluto, etc.
  
  ### Código generado
  Código original ---> [Ver](https://github.com/AmandaIsDead/Generacion-T/tree/main/TP%201%20-%20Anti-Vibe%20Coding%20Challenge/Caso%201%20-%20Pok%C3%A9dex/C%C3%B3digo%20Original)
@@ -26,6 +27,10 @@
  Código mejorado ---> [Ver](https://github.com/AmandaIsDead/Generacion-T/tree/main/TP%201%20-%20Anti-Vibe%20Coding%20Challenge/Caso%201%20-%20Pok%C3%A9dex/C%C3%B3digo%20Mejorado)
  
  ### Validación personal 
+ A pesar de no tener muchos tantos sobre JS, puedo entender como funciona el código, ya que la IA también fue clara y lo estructuró de forma muy ordenada, agregó títulos a los bloques y funciones del mismo. 
+ <br>
+ Para validar el código, lo que haría sería ver si estan todos los Pókemon, utilizar el filtro, agregar un Pokémon a favoritos y ver si se guarda al cerrar la página (localStorage), generar algún error (como buscar un nombre inexistente) para ver si cumplió con el manejo de errores, etc.
+
 
 <br> <br>
 
