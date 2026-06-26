@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Wars Galaxy</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header>
+    <h1>🌌 Star Wars Galaxy</h1>
+    <p>Explorá personajes y guardá tus favoritos</p>
+  </header>
+
+  <main>
+    <section class="search-box">
+      <input type="text" id="search" placeholder="Buscar personaje (ej: Luke, Darth Vader...)"/>
+      <button onclick="searchCharacter()">Buscar</button>
+    </section>
+
+    <section id="results" class="grid"></section>
+
+    <section class="favorites">
+      <h2>⭐ Favoritos</h2>
+      <div id="favoritesList" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con la Fuerza ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

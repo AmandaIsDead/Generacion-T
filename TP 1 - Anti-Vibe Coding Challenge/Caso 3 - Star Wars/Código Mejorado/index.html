@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Star Wars Wiki</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Rajdhani:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Fondo espacial -->
+    <!-- ========================= -->
+
+    <div class="space">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="nebula"></div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- Loader -->
+    <!-- ========================= -->
+
+    <div id="loader" class="loader hidden">
+
+        <div class="spinner"></div>
+
+        <h2>Cargando información de la galaxia...</h2>
+
+        <p>Consultando la Base de Datos Imperial...</p>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Mensajes -->
+    <!-- ========================= -->
+
+    <div id="message" class="message hidden"></div>
+
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
+
+    <header>
+
+        <h1>
+
+            STAR WARS
+
+            <span>GALACTIC WIKI</span>
+
+        </h1>
+
+        <p>
+            Explora personajes, planetas, especies,
+            naves, vehículos y películas del universo
+            Star Wars.
+        </p>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- Navegación -->
+    <!-- ========================= -->
+
+    <nav>
+
+        <button class="nav-btn active"
+            data-section="characters">
+
+            Personajes
+
+        </button>
+
+        <button class="nav-btn"
+            data-section="planets">
+
+            Planetas
+
+        </button>
+
+        <button class="nav-btn"
+            data-section="species">
+
+            Especies
+
+        </button>
+
+        <button class="nav-btn"
+            data-section="starships">
+
+            Naves
+
+        </button>
+
+        <button class="nav-btn"
+            data-section="vehicles">
+
+            Vehículos
+
+        </button>
+
+        <button class="nav-btn"
+            data-section="films">
+
+            Películas
+
+        </button>
+
+    </nav>
+
+    <!-- ========================= -->
+    <!-- Barra de búsqueda -->
+    <!-- ========================= -->
+
+    <section class="search-panel">
+
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="Buscar personaje..."
+        >
+
+        <select id="genderFilter">
+
+            <option value="all">
+
+                Todos los géneros
+
+            </option>
+
+            <option value="male">
+
+                Masculino
+
+            </option>
+
+            <option value="female">
+
+                Femenino
+
+            </option>
+
+            <option value="hermaphrodite">
+
+                Hermafrodita
+
+            </option>
+
+            <option value="n/a">
+
+                N/A
+
+            </option>
+
+        </select>
+
+        <select id="speciesFilter">
+
+            <option value="all">
+
+                Todas las especies
+
+            </option>
+
+        </select>
+
+        <button id="searchBtn">
+
+            Buscar
+
+        </button>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Contenido -->
+    <!-- ========================= -->
+
+    <main>
+
+        <!-- ===================== -->
+        <!-- Personajes -->
+        <!-- ===================== -->
+
+        <section
+            id="characters"
+            class="content-section active">
+
+            <h2>
+
+                Personajes
+
+            </h2>
+
+            <div
+                id="charactersGrid"
+                class="card-grid">
+
+            </div>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- Planetas -->
+        <!-- ===================== -->
+
+        <section
+            id="planets"
+            class="content-section">
+
+            <h2>
+
+                Planetas
+
+            </h2>
+
+            <div
+                id="planetsGrid"
+                class="card-grid">
+
+            </div>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- Especies -->
+        <!-- ===================== -->
+
+        <section
+            id="species"
+            class="content-section">
+
+            <h2>
+
+                Especies
+
+            </h2>
+
+            <div
+                id="speciesGrid"
+                class="card-grid">
+
+            </div>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- Naves -->
+        <!-- ===================== -->
+
+        <section
+            id="starships"
+            class="content-section">
+
+            <h2>
+
+                Naves
+
+            </h2>
+
+            <div
+                id="starshipsGrid"
+                class="card-grid">
+
+            </div>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- Vehículos -->
+        <!-- ===================== -->
+
+        <section
+            id="vehicles"
+            class="content-section">
+
+            <h2>
+
+                Vehículos
+
+            </h2>
+
+            <div
+                id="vehiclesGrid"
+                class="card-grid">
+
+            </div>
+
+        </section>
+
+        <!-- ===================== -->
+        <!-- Películas -->
+        <!-- ===================== -->
+
+        <section
+            id="films"
+            class="content-section">
+
+            <h2>
+
+                Películas
+
+            </h2>
+
+            <div
+                id="filmsGrid"
+                class="card-grid">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ========================= -->
+    <!-- Modal -->
+    <!-- ========================= -->
+
+    <div
+        id="modal"
+        class="modal hidden">
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-btn">
+
+                ✕
+
+            </button>
+
+            <div id="modalBody">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Botón volver arriba -->
+    <!-- ========================= -->
+
+    <button
+        id="topBtn"
+        class="top-btn">
+
+        ↑
+
+    </button>
+
+    <!-- ========================= -->
+    <!-- Templates -->
+    <!-- ========================= -->
+
+    <template id="cardTemplate">
+
+        <article class="card">
+
+            <div class="card-header">
+
+                <h3 class="card-title">
+
+                </h3>
+
+            </div>
+
+            <div class="card-body">
+
+            </div>
+
+            <button class="details-btn">
+
+                Ver más
+
+            </button>
+
+        </article>
+
+    </template>
+
+    <template id="modalTemplate">
+
+        <div class="modal-info">
+
+            <h2 class="modal-title">
+
+            </h2>
+
+            <div class="modal-data">
+
+            </div>
+
+        </div>
+
+    </template>
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <p>
+
+            Star Wars Galactic Wiki
+
+        </p>
+
+        <span>
+
+            Desarrollado con HTML, CSS, JavaScript y SWAPI
+
+        </span>
+
+    </footer>
+
+    <!-- ========================= -->
+    <!-- Script -->
+    <!-- ========================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
