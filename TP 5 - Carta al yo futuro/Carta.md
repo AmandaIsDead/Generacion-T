@@ -1,4 +1,4 @@
-# Carta al yo del 2029
+# Carta al Yo del 2029
 
 ### Espero que las cosas hayan salido bien y que hayas seguido aprendiendo, aunque al principio algunas cosas dieran miedo o parecieran difíciles.
 Está claro que la IA va a estar cada vez más presente, pero creo que siempre va a hacer falta que alguien piense, tome decisiones y tenga pensamiento crítico.
