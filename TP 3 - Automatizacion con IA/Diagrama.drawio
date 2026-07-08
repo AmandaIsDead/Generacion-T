@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="CJDAaVb0XQW3Vumi0FwV">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-16" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-1" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=13;" value="El usuario inicia&lt;div&gt;sesión&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="231" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-15" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=13;" value="I" vertex="1">
+          <mxGeometry height="60" width="60" x="276" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-18" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="La IA recibe&lt;div&gt;información&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;del usuario&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="149" x="232" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-19" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="&amp;nbsp;LA IA analiza el historial, gustos y calificaciones" vertex="1">
+          <mxGeometry height="50" width="149" x="232" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-20" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="La IA busca contenido similar usando IA y TMDB" vertex="1">
+          <mxGeometry height="50" width="149" x="232" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-21" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-7" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=-180;fontSize=13;" value="" vertex="1">
+          <mxGeometry height="50" width="141" x="236" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-22" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-8" parent="1" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=13;" value="&amp;nbsp;La IA muestra recomendaciones&amp;nbsp;&lt;div&gt;en la pantalla&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="149" x="232" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-27" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="El usuario mira, califica o ignora el contenido" vertex="1">
+          <mxGeometry height="50" width="150" x="232" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-24" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="La IA&amp;nbsp;vuelve a generar recomendaciones" vertex="1">
+          <mxGeometry height="50" width="150" x="500" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=13;" value="La IA genera un ran-king personalizado&amp;nbsp; &amp;nbsp; de películas" vertex="1">
+          <mxGeometry height="50" width="137.12" x="239.88" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-28" edge="1" parent="1" source="6B_mbbdD_j7dIm_2-L2u-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=13;" target="6B_mbbdD_j7dIm_2-L2u-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6B_mbbdD_j7dIm_2-L2u-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="La IA aprende de ese comportamiento" vertex="1">
+          <mxGeometry height="50" width="150" x="232" y="940" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
