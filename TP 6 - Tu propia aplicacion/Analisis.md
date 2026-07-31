@@ -26,16 +26,16 @@ Esta aplicación está pensada para esos jugadores que prefieren tener su biblio
 
 ## Datos
 Cada videojuego debe tener:
-ID
-Nombre
-Plataforma
-Género
-Estado
-Horas jugadas
-Fecha de agregado
-Calificación (1-10)
-Favorito (Sí/No)
-Observaciones
+* ID
+* Nombre
+* Plataforma
+* Género
+* Estado
+* Horas jugadas
+* Fecha de agregado
+* Calificación (1-10)
+* Favorito (Sí/No)
+* Observaciones
 
 <br>
 
