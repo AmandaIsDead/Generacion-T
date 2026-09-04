@@ -14,4 +14,4 @@
 
 ### Universos
 - id
-- Franquicia
+- Nombre
