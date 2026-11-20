@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🎮</span>
+                <div>
+                    <h1>GameTracker</h1>
+                    <p>Tu biblioteca de videojuegos</p>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" id="addGameBtn">
+                <span>＋</span> Agregar juego
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="stats">
+            <div class="stat-card">
+                <span class="stat-icon">🎮</span>
+                <div>
+                    <span class="stat-number" id="totalGames">0</span>
+                    <span class="stat-label">Juegos</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">▶️</span>
+                <div>
+                    <span class="stat-number" id="playingGames">0</span>
+                    <span class="stat-label">Jugando</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">⭐</span>
+                <div>
+                    <span class="stat-number" id="favoriteGames">0</span>
+                    <span class="stat-label">Favoritos</span>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">⏱️</span>
+                <div>
+                    <span class="stat-number" id="totalHours">0</span>
+                    <span class="stat-label">Horas jugadas</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters">
+
+            <div class="search-box">
+                <span>🔎</span>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Buscar un juego..."
+                >
+            </div>
+
+            <select id="platformFilter">
+                <option value="">Todas las plataformas</option>
+            </select>
+
+            <select id="genreFilter">
+                <option value="">Todos los géneros</option>
+            </select>
+
+            <select id="statusFilter">
+                <option value="">Todos los estados</option>
+                <option value="Jugando">Jugando</option>
+                <option value="Completado">Completado</option>
+                <option value="Pendiente">Pendiente</option>
+                <option value="Abandonado">Abandonado</option>
+            </select>
+
+            <button class="btn-favorite-filter" id="favoriteFilter">
+                ☆ Favoritos
+            </button>
+
+            <button class="btn-clear" id="clearFilters">
+                Limpiar
+            </button>
+
+        </section>
+
+        <div class="library-header">
+            <div>
+                <h2>Mi biblioteca</h2>
+                <p id="resultsText">0 juegos encontrados</p>
+            </div>
+        </div>
+
+        <section id="gamesContainer" class="games-grid"></section>
+
+        <div id="emptyState" class="empty-state hidden">
+            <div class="empty-icon">🎮</div>
+            <h3>No encontramos juegos</h3>
+            <p>Probá cambiar los filtros o agregá un nuevo videojuego.</p>
+            <button class="btn btn-primary" id="emptyAddBtn">
+                Agregar juego
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Modal para agregar/editar juegos -->
+    <div class="modal-overlay hidden" id="gameModal">
+        <div class="modal">
+
+            <div class="modal-header">
+                <div>
+                    <h2 id="modalTitle">Agregar videojuego</h2>
+                    <p>Completá los datos de tu juego</p>
+                </div>
+
+                <button class="close-btn" id="closeModal">×</button>
+            </div>
+
+            <form id="gameForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group full">
+                        <label for="gameName">Nombre *</label>
+                        <input
+                            type="text"
+                            id="gameName"
+                            placeholder="Ej: Minecraft"
+                            maxlength="60"
+                        >
+                        <small class="error-message" id="nameError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gamePlatform">Plataforma *</label>
+                        <select id="gamePlatform">
+                            <option value="">Seleccionar</option>
+                            <option value="PC">PC</option>
+                            <option value="PlayStation 5">PlayStation 5</option>
+                            <option value="PlayStation 4">PlayStation 4</option>
+                            <option value="Xbox Series">Xbox Series</option>
+                            <option value="Xbox One">Xbox One</option>
+                            <option value="Nintendo Switch">Nintendo Switch</option>
+                            <option value="Nintendo 3DS">Nintendo 3DS</option>
+                            <option value="Mobile">Mobile</option>
+                        </select>
+                        <small class="error-message" id="platformError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gameGenre">Género *</label>
+                        <select id="gameGenre">
+                            <option value="">Seleccionar</option>
+                            <option value="Acción">Acción</option>
+                            <option value="Aventura">Aventura</option>
+                            <option value="RPG">RPG</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Supervivencia">Supervivencia</option>
+                            <option value="Shooter">Shooter</option>
+                            <option value="Estrategia">Estrategia</option>
+                            <option value="Simulación">Simulación</option>
+                            <option value="Deportes">Deportes</option>
+                            <option value="Sandbox">Sandbox</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <small class="error-message" id="genreError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gameStatus">Estado *</label>
+                        <select id="gameStatus">
+                            <option value="">Seleccionar</option>
+                            <option value="Jugando">Jugando</option>
+                            <option value="Completado">Completado</option>
+                            <option value="Pendiente">Pendiente</option>
+                            <option value="Abandonado">Abandonado</option>
+                        </select>
+                        <small class="error-message" id="statusError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gameHours">Horas jugadas</label>
+                        <input
+                            type="number"
+                            id="gameHours"
+                            min="0"
+                            max="99999"
+                            step="0.5"
+                            placeholder="Ej: 25"
+                        >
+                        <small class="error-message" id="hoursError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gameDate">Fecha de agregado *</label>
+                        <input type="date" id="gameDate">
+                        <small class="error-message" id="dateError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gameRating">Calificación</label>
+                        <select id="gameRating">
+                            <option value="0">Sin calificación</option>
+                            <option value="1">★☆☆☆☆</option>
+                            <option value="2">★★☆☆☆</option>
+                            <option value="3">★★★☆☆</option>
+                            <option value="4">★★★★☆</option>
+                            <option value="5">★★★★★</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group favorite-check">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="gameFavorite">
+                            <span>⭐ Marcar como favorito</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="gameNotes">Observaciones</label>
+                        <textarea
+                            id="gameNotes"
+                            rows="4"
+                            maxlength="300"
+                            placeholder="Escribí algo sobre este juego..."
+                        ></textarea>
+                    </div>
+
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span id="submitText">Guardar juego</span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Mensajes -->
+    <div id="toast" class="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
